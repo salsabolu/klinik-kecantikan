@@ -1,0 +1,424 @@
+Tentu, ini adalah isi dari file `bisnis_proses.txt` yang telah dirapikan ke dalam format Markdown (`.mdc`) tanpa mengubah kontennya.
+
+-----
+
+## ✅ 1. Hak Akses Berdasarkan Role
+
+| Role                  | Hak Akses Utama                                                              |
+|-----------------------|-------------------------------------------------------------------------------|
+| **Admin**             | Semua akses: manajemen pengguna, laporan, transaksi, stok, rekam medis, dll. |
+| **Resepsionis**       | Pendaftaran pasien, reservasi, transaksi/pembayaran.                         |
+| **Dokter/Terapis**    | Melihat jadwal, mencatat & melihat rekam medis.                              |
+| **Manajer Stok**      | Kelola produk/layanan, update stok.                                          |
+| **Pasien** (opsional) | Reservasi online, melihat riwayat kunjungan dan treatment.                   |
+
+---
+
+## ✅ 2. Hak Akses Halaman Berdasarkan Role
+
+| Halaman / Fitur    | Admin | Resepsionis | Dokter/Terapis | Manajer Stok | Pasien |
+|--------------------|:-----:|:-----------:|:--------------:|:------------:|:------:|
+| Dashboard          |  ✅   |     ✅      |       ✅       |      ✅      |   ❌   |
+| Manajemen Pengguna |  ✅   |     ❌      |       ❌       |      ❌      |   ❌   |
+| Data Pasien        |  ✅   |     ✅      | ✅ (read only) |      ❌      |   ❌   |
+| Reservasi & Jadwal |  ✅   |     ✅      |       ✅       |      ❌      |   ✅   |
+| Rekam Medis        |  ✅   |     ❌      |       ✅       |      ❌      |   ❌   |
+| Produk & Layanan   |  ✅   |     ❌      |       ❌       |      ✅      |   ❌   |
+| Transaksi          |  ✅   |     ✅      |       ❌       |      ❌      |   ❌   |
+| Laporan            |  ✅   |     ❌      |       ❌       | ✅ (stok)    |   ❌   |
+
+-----
+
+## 3\. Kebutuhan Fungsional dan Non-Fungsional
+
+### Kebutuhan Fungsional
+
+1.  Sistem harus dapat melakukan pendaftaran pasien baru dan mengelola data pasien
+2.  Sistem harus dapat mengelola reservasi dan jadwal treatment/konsultasi
+3.  Sistem harus dapat mencatat dan mengelola rekam medis pasien
+4.  Sistem harus dapat mengelola daftar produk dan layanan, serta stok produk
+5.  Sistem harus dapat mencatat transaksi penjualan dan mengelola pembayaran
+6.  Sistem harus dapat menghasilkan berbagai laporan keuangan dan operasional
+7.  Sistem harus memiliki manajemen pengguna dengan hak akses berbasis peran
+
+### Kebutuhan Non-Fungsional
+
+1.  Aplikasi harus responsif dan cepat dalam memproses data
+2.  Data pasien dan transaksi harus aman dan terlindungi dari akses tidak sah
+3.  Sistem harus mampu menangani peningkatan jumlah pasien dan data di masa mendatang
+4.  Antarmuka pengguna harus intuitif dan mudah digunakan
+5.  Kode harus mudah dipelihara dan dikembangkan lebih lanjut
+6.  Aplikasi harus kompatibel dengan berbagai browser web modern
+
+-----
+
+## ✅ 3. Struktur Tabel dan Tipe Data (PostgreSQL)
+
+### `users`
+
+  - id: bigserial (PK)
+  - name: varchar
+  - email: varchar (unique)
+  - password: varchar
+  - role: enum('admin','resepsionis','dokter','manajer\_stok', 'pasien')
+  - created\_at, updated\_at
+
+### `patients`
+
+  - id: bigserial (PK)
+  - user\_id: bigint (FK nullable)
+  - nama\_lengkap: varchar
+  - tanggal\_lahir: date
+  - jenis\_kelamin: varchar(10)
+  - alamat: text
+  - nomor\_telepon: varchar
+  - email: varchar
+  - created\_at, updated\_at
+
+### `products`
+
+  - id: bigserial (PK)
+  - nama\_produk: varchar
+  - deskripsi: text
+  - harga: integer
+  - stok: integer
+  - created\_at, updated\_at
+
+### `services`
+
+  - id: bigserial (PK)
+  - nama\_layanan: varchar
+  - deskripsi: text
+  - harga: integer
+  - durasi\_menit: integer
+  - created\_at, updated\_at
+
+### `reservations`
+
+  - id: bigserial (PK)
+  - patient\_id: bigint (FK)
+  - user\_id: bigint (FK ke dokter)
+  - service\_id: bigint (FK)
+  - tanggal\_reservasi: date
+  - waktu\_mulai: time
+  - waktu\_selesai: time
+  - status: enum('pending','confirmed','completed','cancelled')
+  - created\_at, updated\_at
+
+### `medical_records`
+
+  - id: bigserial (PK)
+  - patient\_id: bigint (FK)
+  - user\_id: bigint (FK ke dokter)
+  - tanggal\_pemeriksaan: date
+  - diagnosa: text
+  - tindakan: text
+  - catatan: text
+  - created\_at, updated\_at
+
+### `transactions`
+
+  - id: bigserial (PK)
+  - patient\_id: bigint (FK)
+  - user\_id: bigint (FK ke resepsionis)
+  - tanggal\_transaksi: date
+  - total\_harga: integer
+  - metode\_pembayaran: varchar
+  - status\_pembayaran: enum('paid','unpaid','partial')
+  - created\_at, updated\_at
+
+### `transaction_details`
+
+  - id: bigserial (PK)
+  - transaction\_id: bigint (FK)
+  - product\_id: bigint (FK nullable)
+  - service\_id: bigint (FK nullable)
+  - jumlah: integer
+  - harga\_satuan: integer
+  - subtotal: integer
+  - created\_at, updated\_at
+
+**attachments** (opsional untuk upload dokumen medis)
+
+-----
+
+## ✅ 4. Relasi Antar Tabel
+
+  * users ➝ patients (1:N)
+  * patients ➝ reservations, medical\_records, transactions (1:N)
+  * users (dokter) ➝ reservations, medical\_records (1:N)
+  * users (resepsionis) ➝ transactions (1:N)
+  * reservations ➝ services (M:1)
+  * transactions ➝ transaction\_details (1:N)
+  * products/services ➝ transaction\_details (M:1)
+  * medical\_records ➝ attachments (1:N)
+
+-----
+
+## ✅ 5. Bisnis Proses - Aplikasi Klinik Kecantikan Laravel + PostgreSQL + TailwindCSS + DaisyUI
+
+### A. Pendaftaran Pasien
+
+1.  Pasien Datang/Menghubungi Klinik
+2.  Resepsionis Membuka Modul Pendaftaran Pasien
+3.  Resepsiois Mencari Pasien Berdasarkan Nama, Nomor Telepon, atau ID Pasien (Jika Pasien Lama)
+4.  Resepsionis Input Data Pasien (Jika Pasien Baru)
+5.  Sistem Melakukan Pengecekan Data Duplikat
+6.  Resepsionis Menyimpan Data
+7.  Sistem Menyimpan ke Tabel 'patients'
+8.  Sistem Menghasilkan ID Pasien Unik
+
+### B. Reservasi Treatment
+
+1.  Pasien Meminta Reservasi Melalui Resepsionis (Menghubungi Klinik) atau Aplikasi (Mengakses Modul Reservasi Online)
+2.  Resepsionis Membuka Modul Reservasi
+3.  Pencarian Pasien, Jika Pasien Baru Maka Proses Pendaftaran Akan Dilakukan Dahulu
+4.  Resepsionis/Pasien Memilih Layanan dari Daftar Layanan
+5.  Pemilihan Tanggal dan Waktu yang Tersedia
+6.  Pemilihan Dokter/Terapis, Sistem Akan Menampilkan Jadwal Ketersediaan Dokter/Terapis Berdasarkan Durasi Layanan dan Jadwal yang Sudah Ada (Sistem akan memeriksa ketersediaan berdasarkan data di tabel `Reservations` dan jadwal kerja dokter/terapis). Jika Tidak Ada Preferensi, Sistem Menyarankan Dokter/Terapis yang Tersedia
+7.  Konfirmasi Reservasi
+8.  Sistem Menyimpan ke Tabel 'reservations'
+9.  Sistem Menampilkan Ringkasan Rservasi
+10. Notifikasi (Opsional)
+11. Sistem Update Jadwal Dokter/Terapis untuk Menunjukkan Slot yang Terisi
+
+### C. Rekam Medis
+
+1.  Dokter/Terapis Mengakses Modul Rekam Medis
+2.  Dokter/Terapis Mencari Pasien Berdasarkan Nama atau ID
+3.  Sistem Menampilkan Profil Pasien dan Riwayat Rekam Medis
+4.  Dokter/Terapis Memulai Sesi Rekam Medis Baru untuk Kunjungan Saat Ini
+5.  Dokter/Terapis Mencatat Infomasi Selama Konsultasi/Treatment
+6.  Dokter/Terapis Mengunggah Lampiran Seperti Foto Kondisi Pasien (Sebelum dan Sesudah), Hasil Lab, atau Dokumen Pendukung (Opsional)
+7.  Dokter/Terapis Menyimpanan Rekam Medis
+8.  Sistem Mencatat Dokter/Terapis yang Melakukan Pencatatan dan Waktu Penyimpanan pada table 'medical\_records'
+9.  Rekam Medis yang Tersimpan Dapat Diakses oleh Doktor/Terapis yang Berwenang untuk Melihat Riwayat Kunjungan dan Treatment Pasien
+
+### D. Manajemen Produk & Layanan
+
+1.  Manajer Stok Mengakses Modul Manajemen Produk/Layanan
+2.  Penambahan Produk Baru: Manajer Stok Menginput Detail Produk Baru Kemudian Sistem Akan Menyimpan ke Tabel 'products'
+3.  Penambahan Layanan Baru: Manajer Stok Menginput Detail Layanan Baru Kemudian Sistem Akan Menyimpan ke Tabel 'services'
+4.  Pembaruan Informasi Produk/Layanan: Manajer Stok Mencari Produk atau Layanan yang Ingin Diperbarui Kemudian Mengubah Detail. Setelah Itu Sistem Akan Menyimpan ke Tabel 'products' atau 'services'
+5.  Manajemen Stok Produk: Penerimaan Barang (Ketika ada produk baru masuk, Manajer Stok mencatat jumlah produk yang diterima untuk menambah stok), Pengeluaran Barang (Ketika produk digunakan untuk treatment atau dijual, sistem secara otomatis mengurangi stok. Manajer Stok juga dapat melakukan penyesuaian stok manual jika ada kerusakan atau kehilangan), dan Peringatan Stok Minimum (Sistem dapat memberikan notifikasi otomatis kepada Manajer Stok jika stok produk mencapai batas minimum yang ditentukan)
+6.  Manajer Stok Melihat Laporan Stok, Riwayat Keluar Masuk Barang, dan Analisis Perputaran Stok
+
+### E. Transaksi Pembayaran
+
+1.  Pasien Selesai Treatment/Membeli Produk
+2.  Resepsionis Membuka Modul Transaksi
+3.  Resepsiois Mencari Pasien dan Menambahkan Layanan/Produk yang Telah Diterima/Dibeli ke dalam Daftar Transaksi
+4.  Sistem Secara Otomatis Menghitung Total Harga Berdasarkan Layanan/Produk dan Jumlahnya
+5.  Penambahan Diskon/Pajak (Opsional)
+6.  Pemilihan Metode Pembayaran (Tunai, Kartu Debit/Kredit, Transfer Bank)
+7.  Resepsionis Mencatat Jumlah Pembayaran yang Diterima. Jika Pembayaran Tidak Penuh (misalnya, cicilan), Sistem akan Mencatat Status Pembayaran Sebagai 'Partial' atau 'Unpaid'
+8.  Sistem Menyimpan Detail Transaksi ke table 'transactions' dan 'transaction\_details'
+9.  Sistem Dpat Mencetak Struk/Invoice untuk Pasien
+10. Laporan Keuangan (Dilakukan oleh Admin): Admin Dapat Menghasilkan Laporan Pendapatan Harian, Mingguan, Bulanan, atau Tahunan. Admin dapat melihat laporan penjualan produk dan layanan terlaris. Admin dapat melihat laporan laba rugi sederhana (jika ada pencatatan pengeluaran). Laporan dapat diekspor ke format yang berbeda (misalnya, PDF, Excel) untuk analisis lebih lanjut.
+
+-----
+
+## ✅ 6. Endpoint API (RESTful)
+
+### Modul Pasien
+
+```
+GET    /api/patients
+POST   /api/patients
+GET    /api/patients/{id}
+PUT    /api/patients/{id}
+DELETE /api/patients/{id}
+```
+
+### Modul Reservasi
+
+```
+GET    /api/reservations
+POST   /api/reservations
+GET    /api/reservations/{id}
+PUT    /api/reservations/{id}
+DELETE /api/reservations/{id}
+GET    /api/schedules/available
+```
+
+### Modul Rekam Medis
+
+```
+GET    /api/patients/{id}/medical-records
+POST   /api/medical-records
+GET    /api/medical-records/{id}
+PUT    /api/medical-records/{id}
+DELETE /api/medical-records/{id}
+POST   /api/medical-records/{id}/attachments
+```
+
+### Modul Produk & Layanan
+
+```
+GET    /api/products / /api/services
+POST   /api/products / /api/services
+PUT    /api/products/{id} / /api/services/{id}
+DELETE /api/products/{id} / /api/services/{id}
+POST   /api/products/{id}/stock/adjust
+```
+
+### Modul Transaksi & Laporan
+
+```
+GET    /api/transactions / /api/reports/revenue / /api/reports/sales
+POST   /api/transactions
+GET    /api/transactions/{id}
+PUT    /api/transactions/{id}/status
+```
+
+### Modul Autentikasi & Pengguna
+
+```
+POST   /api/login
+POST   /api/logout
+POST   /api/users          (admin only)
+GET    /api/users          (admin only)
+PUT    /api/users/{id}/role (admin only)
+```
+
+-----
+
+## ✅ 7. Routing Berdasarkan Role (Contoh Laravel)
+
+```php
+Route::middleware(['auth', 'role:admin'])->group(function () {
+    Route::resource('users', UserController::class);
+    Route::get('/reports', [ReportController::class, 'index']);
+});
+
+Route::middleware(['auth', 'role:resepsionis'])->group(function () {
+    Route::resource('patients', PatientController::class);
+    Route::resource('reservations', ReservationController::class);
+    Route::resource('transactions', TransactionController::class);
+});
+
+Route::middleware(['auth', 'role:dokter'])->group(function () {
+    Route::resource('medical-records', MedicalRecordController::class);
+});
+
+Route::middleware(['auth', 'role:stok'])->group(function () {
+    Route::resource('products', ProductController::class);
+    Route::resource('services', ServiceController::class);
+});
+```
+
+-----
+
+## ✅ 8. Policy dan Middleware
+
+### Middleware
+
+```bash
+php artisan make:middleware RoleMiddleware
+```
+
+### Contoh implementasi `handle()`:
+
+```php
+if (!auth()->check() || auth()->user()->role !== $role) {
+    abort(403);
+}
+```
+
+### Policy
+
+```bash
+php artisan make:policy PatientPolicy --model=Patient
+```
+
+## Lalu gunakan di controller via `authorize()` atau `Gate::allows()`.
+
+## ✅ 9. Fontend dan Komponen UI
+
+### Modul Pasien
+
+1.  Beranda sebagai landing page pasien untuk mengenali klinik, layanan, dan produk yang tersedia, serta dokter/terapis yang ada di klinik
+2.  Form pendaftaran pasien baru dengan validasi input (nama, tanggal lahir, jenis kelamin, alamat, nomor telepon, email)
+3.  Tabel daftar pasien dengan fitur pencarian, filter, dan paginasi
+4.  Halaman detail pasien menampilkan informasi pribadi, riwayat kunjungan, dan rekam medis terkait
+5.  Tombol untuk mengedit dan menghapus data pasien (dengan konfirmasi)
+
+### Modul Reservasi
+
+1.  Form reservasi dengan pilihan layanan, dokter/terapis, tanggal, dan waktu
+2.  Kalender interaktif untuk menampilkan jadwal dokter/terapis dan slot yang tersedia/terisi
+3.  Daftar reservasi dengan status (pending, confirmed, completed, cancelled) dan fitur filter
+4.  Notifikasi pengingat reservasi
+
+### Modul Rekam Medis
+
+1.  Form pencatatan rekam medis dengan area teks untuk diagnosa, tindakan,
+    catatan, dll
+2.  Fitur upload file untuk lampiran (gambar, PDF)
+3.  Tampilan riwayat rekam medis pasien secara kronologis
+
+### Modul Produk & Layanan
+
+1.  Form untuk menambah/mengedit produk (nama, deskripsi, harga, stok)
+2.  Form untuk menambah/mengedit layanan (nama, deskripsi, harga, durasi)
+3.  Tabel daftar produk dan layanan dengan fitur pencarian dan filter
+4.  Fitur penyesuaian stok manual
+
+### Modul Transaksi & Laporan
+
+1.  Form transaksi untuk menambahkan produk/layanan ke keranjang,
+    menghitung total
+2.  Pilihan metode pembayaran
+3.  Tabel daftar transaksi dengan status pembayaran
+4.  Halaman laporan keuangan (pendapatan, penjualan, dll.) dengan filter
+    tanggal
+
+### Modul Autentikasi & Pengguna
+
+1.  Form pendaftaran pengguna baru (untuk admin)
+2.  Tabel daftar pengguna dengan peran dan fitur edit/hapus (untuk admin)
+
+<!-- end list -->
+
+  * Form dengan Validasi Input (Login, Registrasi, Pasien, Reservasi, Transaksi)
+  * Table View dengan Fitu PEncarian, Filter, dan Paginasi (Data Pasien, Produk, Transaksi)
+  * Modal & Toast (Konfirmasi, Notifikasi)
+  * Calendar Picker (Jadwal Dokter)
+  * Chart (Laporan Keuangan)
+  * File Upload (Lampiran rekam medis)
+  * Sidebar + Role-aware Navbar
+
+-----
+
+## ✅ 10. Teknologi yang Digunakan
+
+| Area | Tools / Library |
+| :--- | :--- |
+| Backend | Laravel 10, Eloquent ORM, Sanctum (auth), Artisan |
+| Database | PostgreSQL 17 |
+| Frontend | Blade (untuk layout utama Inertia), Inertia.js, Vue.js, TailwindCSS, DaisyUI, Alpine.js (opsional untuk interaktivitas ringan di luar komponen utama Vue/React) |
+| Tools Dev | Git, Composer, Laravel Sail/Docker, Postman, NPM |
+| Testing | PHPUnit, Laravel Dusk (opsional end-to-end) |
+| Server | Nginx/Apache + PHP-FPM |
+
+-----
+
+## ✅ 11. Struktur Laravel
+
+  * `app/Models/` : Semua model Eloquent + relasi logika
+  * `app/Http/Controllers/` : Semua controller API
+  * `routes/api.php` : Routing REST API
+  * `resources/views/` : Blade + komponen DaisyUI
+  * `database/migrations/` : Struktur tabel
+  * `database/seeders/` : Data awal
+
+-----
+
+## ✅ 12. Integrasi Komponen UI
+
+  * TailwindCSS + DaisyUI untuk styling semua UI form & layout
+  * Input standar pakai `input-bordered`, `form-control`
+  * Table: responsif + fitur filter
+  * Komponen reuseable di `resources/views/components`
+
+-----
