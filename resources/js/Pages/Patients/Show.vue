@@ -237,8 +237,8 @@
                       <p class="text-sm">Kasir: {{ transaction.user?.name || 'Tidak Diketahui' }}</p>
                     </div>
                     <div class="text-right">
-                      <p class="font-bold text-lg">Rp {{ formatCurrency(transaction.total_harga) }}</p>
-                      <div class="badge badge-success">{{ transaction.metode_pembayaran }}</div>
+                      <p class="font-bold text-lg">Rp {{ formatCurrency(transaction.final_amount) }}</p>
+                      <div class="badge badge-success">{{ transaction.payment_method }}</div>
                     </div>
                   </div>
                 </div>

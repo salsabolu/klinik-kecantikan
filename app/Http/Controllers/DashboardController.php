@@ -27,8 +27,8 @@ class DashboardController extends Controller
                 'total_reservations_today' => Reservation::whereDate('tanggal_reservasi', today())->count(),
                 'total_transactions_today' => Transaction::whereDate('tanggal_transaksi', today())->count(),
                 'total_revenue_today' => Transaction::whereDate('tanggal_transaksi', today())
-                    ->where('status_pembayaran', 'paid')
-                    ->sum('total_harga'),
+                    ->where('payment_status', 'paid')
+                    ->sum('final_amount'),
             ];
         }
 

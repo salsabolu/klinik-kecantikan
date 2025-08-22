@@ -3,120 +3,114 @@
     "file": "assets/AppLayout-8c8a0c55.css",
     "src": "AppLayout.css"
   },
-  "_AppLayout-422bcc0a.js": {
+  "_AppLayout-dae4340c.js": {
     "css": [
       "assets/AppLayout-8c8a0c55.css"
     ],
-    "file": "assets/AppLayout-422bcc0a.js",
+    "file": "assets/AppLayout-dae4340c.js",
     "imports": [
       "resources/js/app.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js",
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js",
       "__plugin-vue_export-helper-c27b6911.js"
     ]
   },
-  "_PasienLayout-7750b425.js": {
-    "file": "assets/PasienLayout-7750b425.js",
+  "_PasienLayout-78074eec.js": {
+    "file": "assets/PasienLayout-78074eec.js",
     "imports": [
       "resources/js/app.js",
-      "_PhSignOut.vue-98dc8f64.js"
+      "_PhSignOut.vue-d88a32e7.js"
     ]
   },
-  "_PhArrowLeft.vue-872f8b85.js": {
-    "file": "assets/PhArrowLeft.vue-872f8b85.js",
+  "_PhArrowLeft.vue-7cd0cf55.js": {
+    "file": "assets/PhArrowLeft.vue-7cd0cf55.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_PhArrowRight.vue-f503e45d.js": {
-    "file": "assets/PhArrowRight.vue-f503e45d.js",
+  "_PhArrowRight.vue-50db43e9.js": {
+    "file": "assets/PhArrowRight.vue-50db43e9.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_PhClock.vue-0bcaea51.js": {
-    "file": "assets/PhClock.vue-0bcaea51.js",
+  "_PhClock.vue-13c998a7.js": {
+    "file": "assets/PhClock.vue-13c998a7.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_PhCurrencyCircleDollar.vue-370c4c60.js": {
-    "file": "assets/PhCurrencyCircleDollar.vue-370c4c60.js",
+  "_PhCurrencyCircleDollar.vue-f80bc588.js": {
+    "file": "assets/PhCurrencyCircleDollar.vue-f80bc588.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_PhEye.vue-3a0a261d.js": {
-    "file": "assets/PhEye.vue-3a0a261d.js",
+  "_PhEye.vue-6bd04f37.js": {
+    "file": "assets/PhEye.vue-6bd04f37.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_PhEyeClosed.vue-67bf9e45.js": {
-    "file": "assets/PhEyeClosed.vue-67bf9e45.js",
+  "_PhEyeClosed.vue-a9c734a7.js": {
+    "file": "assets/PhEyeClosed.vue-a9c734a7.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_PhFlask.vue-b6585dea.js": {
-    "file": "assets/PhFlask.vue-b6585dea.js",
+  "_PhFlask.vue-c1cade1f.js": {
+    "file": "assets/PhFlask.vue-c1cade1f.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_PhNotePencil.vue-2f5d6dac.js": {
-    "file": "assets/PhNotePencil.vue-2f5d6dac.js",
+  "_PhNotePencil.vue-90d1b402.js": {
+    "file": "assets/PhNotePencil.vue-90d1b402.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_PhPlus.vue-ac80d116.js": {
-    "file": "assets/PhPlus.vue-ac80d116.js",
+  "_PhSignOut.vue-d88a32e7.js": {
+    "file": "assets/PhSignOut.vue-d88a32e7.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_PhSignOut.vue-98dc8f64.js": {
-    "file": "assets/PhSignOut.vue-98dc8f64.js",
+  "_PhTrashSimple.vue-fe8683e8.js": {
+    "file": "assets/PhTrashSimple.vue-fe8683e8.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_PhTrashSimple.vue-94343d88.js": {
-    "file": "assets/PhTrashSimple.vue-94343d88.js",
+  "_PhUser.vue-c4a2ae89.js": {
+    "file": "assets/PhUser.vue-c4a2ae89.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_PhUser.vue-42b57831.js": {
-    "file": "assets/PhUser.vue-42b57831.js",
+  "_PhWarning.vue-c808f73c.js": {
+    "file": "assets/PhWarning.vue-c808f73c.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_PhWarning.vue-0291b903.js": {
-    "file": "assets/PhWarning.vue-0291b903.js",
+  "_PhX.vue-9d5f5acb.js": {
+    "file": "assets/PhX.vue-9d5f5acb.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_PhX.vue-bddc74a7.js": {
-    "file": "assets/PhX.vue-bddc74a7.js",
+  "_ResetFilterButton-d1a218ce.js": {
+    "file": "assets/ResetFilterButton-d1a218ce.js",
     "imports": [
+      "_PhX.vue-9d5f5acb.js",
       "resources/js/app.js"
     ]
   },
-  "_ResetFilterButton-97faf3b6.js": {
-    "file": "assets/ResetFilterButton-97faf3b6.js",
-    "imports": [
-      "_PhX.vue-bddc74a7.js",
-      "resources/js/app.js"
-    ]
-  },
-  "_SimpleLayout-91b6f32c.js": {
-    "file": "assets/SimpleLayout-91b6f32c.js",
+  "_SimpleLayout-9e4aead0.js": {
+    "file": "assets/SimpleLayout-9e4aead0.js",
     "imports": [
       "resources/js/app.js"
     ]
@@ -124,8 +118,8 @@
   "__plugin-vue_export-helper-c27b6911.js": {
     "file": "assets/_plugin-vue_export-helper-c27b6911.js"
   },
-  "_lodash-e23d088e.js": {
-    "file": "assets/lodash-e23d088e.js",
+  "_lodash-72a96c4a.js": {
+    "file": "assets/lodash-72a96c4a.js",
     "imports": [
       "resources/js/app.js"
     ]
@@ -135,7 +129,7 @@
     "src": "resources/js/app.css"
   },
   "resources/js/Pages/Auth/ForgotPassword.vue": {
-    "file": "assets/ForgotPassword-351d2a1f.js",
+    "file": "assets/ForgotPassword-caa30e6f.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -143,77 +137,74 @@
     "src": "resources/js/Pages/Auth/ForgotPassword.vue"
   },
   "resources/js/Pages/Auth/Login.vue": {
-    "file": "assets/Login-c43a80c0.js",
+    "file": "assets/Login-6d72869e.js",
     "imports": [
       "resources/js/app.js",
-      "_PhEye.vue-3a0a261d.js",
-      "_PhEyeClosed.vue-67bf9e45.js"
+      "_PhEye.vue-6bd04f37.js",
+      "_PhEyeClosed.vue-a9c734a7.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Auth/Login.vue"
   },
   "resources/js/Pages/Auth/Register.vue": {
-    "file": "assets/Register-8d9ee6a1.js",
+    "file": "assets/Register-41b3bc38.js",
     "imports": [
       "resources/js/app.js",
-      "_PhEye.vue-3a0a261d.js",
-      "_PhEyeClosed.vue-67bf9e45.js"
+      "_PhEye.vue-6bd04f37.js",
+      "_PhEyeClosed.vue-a9c734a7.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Auth/Register.vue"
   },
   "resources/js/Pages/Dashboard/Index.vue": {
-    "file": "assets/Index-89f3610f.js",
+    "file": "assets/Index-5771b399.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
-      "_PasienLayout-7750b425.js",
-      "_PhArrowRight.vue-f503e45d.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhX.vue-bddc74a7.js",
-      "_PhSignOut.vue-98dc8f64.js",
+      "_AppLayout-dae4340c.js",
+      "_PasienLayout-78074eec.js",
+      "_PhArrowRight.vue-50db43e9.js",
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhX.vue-9d5f5acb.js",
+      "_PhSignOut.vue-d88a32e7.js",
       "__plugin-vue_export-helper-c27b6911.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Dashboard/Index.vue"
   },
   "resources/js/Pages/MedicalRecords/Create.vue": {
-    "file": "assets/Create-d5967b4e.js",
+    "file": "assets/Create-6c6c6ea6.js",
     "imports": [
       "resources/js/app.js",
-      "_SimpleLayout-91b6f32c.js",
+      "_SimpleLayout-9e4aead0.js",
       "__plugin-vue_export-helper-c27b6911.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/MedicalRecords/Create.vue"
   },
   "resources/js/Pages/MedicalRecords/Edit.vue": {
-    "file": "assets/Edit-61343b47.js",
+    "file": "assets/Edit-6b2d9239.js",
     "imports": [
       "resources/js/app.js",
-      "_SimpleLayout-91b6f32c.js",
+      "_SimpleLayout-9e4aead0.js",
       "__plugin-vue_export-helper-c27b6911.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/MedicalRecords/Edit.vue"
   },
   "resources/js/Pages/MedicalRecords/Index.vue": {
-    "file": "assets/Index-04feca75.js",
+    "file": "assets/Index-1d4622d6.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
-      "_ResetFilterButton-97faf3b6.js",
-      "_PhEye.vue-3a0a261d.js",
-      "_PhNotePencil.vue-2f5d6dac.js",
-      "_PhTrashSimple.vue-94343d88.js",
+      "_AppLayout-dae4340c.js",
+      "_ResetFilterButton-d1a218ce.js",
       "__plugin-vue_export-helper-c27b6911.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js",
-      "_PhX.vue-bddc74a7.js"
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js",
+      "_PhX.vue-9d5f5acb.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/MedicalRecords/Index.vue"
@@ -226,254 +217,253 @@
     "css": [
       "assets/Show-4ab47b1d.css"
     ],
-    "file": "assets/Show-b9e22d0c.js",
+    "file": "assets/Show-d77e8e2f.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
+      "_AppLayout-dae4340c.js",
       "__plugin-vue_export-helper-c27b6911.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js"
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/MedicalRecords/Show.vue"
   },
   "resources/js/Pages/Patients/Create.vue": {
-    "file": "assets/Create-fe4114a1.js",
+    "file": "assets/Create-d0f66a77.js",
     "imports": [
       "resources/js/app.js",
-      "_SimpleLayout-91b6f32c.js"
+      "_SimpleLayout-9e4aead0.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Patients/Create.vue"
   },
   "resources/js/Pages/Patients/Edit.vue": {
-    "file": "assets/Edit-cf6fdd3d.js",
+    "file": "assets/Edit-ba979499.js",
     "imports": [
       "resources/js/app.js",
-      "_SimpleLayout-91b6f32c.js"
+      "_SimpleLayout-9e4aead0.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Patients/Edit.vue"
   },
   "resources/js/Pages/Patients/Index.vue": {
-    "file": "assets/Index-538939ef.js",
+    "file": "assets/Index-2e7177ca.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
-      "_ResetFilterButton-97faf3b6.js",
-      "_lodash-e23d088e.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js",
+      "_AppLayout-dae4340c.js",
+      "_ResetFilterButton-d1a218ce.js",
+      "_lodash-72a96c4a.js",
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js",
       "__plugin-vue_export-helper-c27b6911.js",
-      "_PhX.vue-bddc74a7.js"
+      "_PhX.vue-9d5f5acb.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Patients/Index.vue"
   },
   "resources/js/Pages/Patients/Show.vue": {
-    "file": "assets/Show-f4225c42.js",
+    "file": "assets/Show-3ce98635.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js",
+      "_AppLayout-dae4340c.js",
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js",
       "__plugin-vue_export-helper-c27b6911.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Patients/Show.vue"
   },
   "resources/js/Pages/Products/Catalog.vue": {
-    "file": "assets/Catalog-61340f33.js",
+    "file": "assets/Catalog-23524f7b.js",
     "imports": [
       "resources/js/app.js",
-      "_PasienLayout-7750b425.js",
-      "_PhX.vue-bddc74a7.js",
-      "_PhSignOut.vue-98dc8f64.js"
+      "_PasienLayout-78074eec.js",
+      "_PhX.vue-9d5f5acb.js",
+      "_PhSignOut.vue-d88a32e7.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Products/Catalog.vue"
   },
   "resources/js/Pages/Products/Create.vue": {
-    "file": "assets/Create-403a5928.js",
+    "file": "assets/Create-eeaf1b5c.js",
     "imports": [
       "resources/js/app.js",
-      "_SimpleLayout-91b6f32c.js",
-      "_PhArrowLeft.vue-872f8b85.js",
-      "_PhSignOut.vue-98dc8f64.js",
-      "_PhWarning.vue-0291b903.js"
+      "_SimpleLayout-9e4aead0.js",
+      "_PhArrowLeft.vue-7cd0cf55.js",
+      "_PhSignOut.vue-d88a32e7.js",
+      "_PhWarning.vue-c808f73c.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Products/Create.vue"
   },
   "resources/js/Pages/Products/Edit.vue": {
-    "file": "assets/Edit-05987d14.js",
+    "file": "assets/Edit-b86e29b8.js",
     "imports": [
       "resources/js/app.js",
-      "_SimpleLayout-91b6f32c.js",
-      "_PhArrowLeft.vue-872f8b85.js",
-      "_PhSignOut.vue-98dc8f64.js",
-      "_PhWarning.vue-0291b903.js"
+      "_SimpleLayout-9e4aead0.js",
+      "_PhArrowLeft.vue-7cd0cf55.js",
+      "_PhSignOut.vue-d88a32e7.js",
+      "_PhWarning.vue-c808f73c.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Products/Edit.vue"
   },
   "resources/js/Pages/Products/Index.vue": {
-    "file": "assets/Index-f1423b18.js",
+    "file": "assets/Index-c0afe5b5.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
-      "_ResetFilterButton-97faf3b6.js",
-      "_lodash-e23d088e.js",
-      "_PhPlus.vue-ac80d116.js",
-      "_PhEye.vue-3a0a261d.js",
-      "_PhNotePencil.vue-2f5d6dac.js",
-      "_PhTrashSimple.vue-94343d88.js",
-      "_PhX.vue-bddc74a7.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js",
+      "_AppLayout-dae4340c.js",
+      "_ResetFilterButton-d1a218ce.js",
+      "_lodash-72a96c4a.js",
+      "_PhTrashSimple.vue-fe8683e8.js",
+      "_PhEye.vue-6bd04f37.js",
+      "_PhNotePencil.vue-90d1b402.js",
+      "_PhX.vue-9d5f5acb.js",
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js",
       "__plugin-vue_export-helper-c27b6911.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Products/Index.vue"
   },
   "resources/js/Pages/Products/Show.vue": {
-    "file": "assets/Show-c8588dbf.js",
+    "file": "assets/Show-276c0ad3.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
-      "_PasienLayout-7750b425.js",
-      "_PhArrowLeft.vue-872f8b85.js",
-      "_PhNotePencil.vue-2f5d6dac.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js",
+      "_AppLayout-dae4340c.js",
+      "_PasienLayout-78074eec.js",
+      "_PhArrowLeft.vue-7cd0cf55.js",
+      "_PhNotePencil.vue-90d1b402.js",
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js",
       "__plugin-vue_export-helper-c27b6911.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Products/Show.vue"
   },
   "resources/js/Pages/Reports/Index.vue": {
-    "file": "assets/Index-41ba0178.js",
+    "file": "assets/Index-5d5eaacc.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js",
+      "_AppLayout-dae4340c.js",
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js",
       "__plugin-vue_export-helper-c27b6911.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Reports/Index.vue"
   },
   "resources/js/Pages/Reports/Stock.vue": {
-    "file": "assets/Stock-9095ef46.js",
+    "file": "assets/Stock-526a1829.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
-      "_ResetFilterButton-97faf3b6.js",
-      "_PhWarning.vue-0291b903.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js",
+      "_AppLayout-dae4340c.js",
+      "_ResetFilterButton-d1a218ce.js",
+      "_PhWarning.vue-c808f73c.js",
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js",
       "__plugin-vue_export-helper-c27b6911.js",
-      "_PhX.vue-bddc74a7.js"
+      "_PhX.vue-9d5f5acb.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Reports/Stock.vue"
   },
   "resources/js/Pages/Reservations/AllDoctorsSchedule.vue": {
-    "file": "assets/AllDoctorsSchedule-f94873ad.js",
+    "file": "assets/AllDoctorsSchedule-00531c98.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js",
+      "_AppLayout-dae4340c.js",
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js",
       "__plugin-vue_export-helper-c27b6911.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Reservations/AllDoctorsSchedule.vue"
   },
   "resources/js/Pages/Reservations/AllDoctorsUpcoming.vue": {
-    "file": "assets/AllDoctorsUpcoming-1139811f.js",
+    "file": "assets/AllDoctorsUpcoming-c380a3f8.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js",
+      "_AppLayout-dae4340c.js",
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js",
       "__plugin-vue_export-helper-c27b6911.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Reservations/AllDoctorsUpcoming.vue"
   },
   "resources/js/Pages/Reservations/Create.vue": {
-    "file": "assets/Create-c3d5c45f.js",
+    "file": "assets/Create-47b65f06.js",
     "imports": [
       "resources/js/app.js",
-      "_SimpleLayout-91b6f32c.js",
+      "_SimpleLayout-9e4aead0.js",
       "__plugin-vue_export-helper-c27b6911.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Reservations/Create.vue"
   },
   "resources/js/Pages/Reservations/DoctorHistory.vue": {
-    "file": "assets/DoctorHistory-9f67cf8f.js",
+    "file": "assets/DoctorHistory-efd46bf1.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js",
+      "_AppLayout-dae4340c.js",
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js",
       "__plugin-vue_export-helper-c27b6911.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Reservations/DoctorHistory.vue"
   },
   "resources/js/Pages/Reservations/DoctorSchedule.vue": {
-    "file": "assets/DoctorSchedule-2c4864f7.js",
+    "file": "assets/DoctorSchedule-89513d60.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js",
+      "_AppLayout-dae4340c.js",
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js",
       "__plugin-vue_export-helper-c27b6911.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Reservations/DoctorSchedule.vue"
   },
   "resources/js/Pages/Reservations/DoctorUpcoming.vue": {
-    "file": "assets/DoctorUpcoming-a1d6ee88.js",
+    "file": "assets/DoctorUpcoming-2c56aea8.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js",
+      "_AppLayout-dae4340c.js",
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js",
       "__plugin-vue_export-helper-c27b6911.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Reservations/DoctorUpcoming.vue"
   },
   "resources/js/Pages/Reservations/Edit.vue": {
-    "file": "assets/Edit-55f16a45.js",
+    "file": "assets/Edit-cee42384.js",
     "imports": [
       "resources/js/app.js",
       "__plugin-vue_export-helper-c27b6911.js"
@@ -482,42 +472,42 @@
     "src": "resources/js/Pages/Reservations/Edit.vue"
   },
   "resources/js/Pages/Reservations/Index.vue": {
-    "file": "assets/Index-8f6ebc00.js",
+    "file": "assets/Index-5339c0c4.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
+      "_AppLayout-dae4340c.js",
       "__plugin-vue_export-helper-c27b6911.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js"
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Reservations/Index.vue"
   },
   "resources/js/Pages/Reservations/MyReservations.vue": {
-    "file": "assets/MyReservations-a0129997.js",
+    "file": "assets/MyReservations-534695b9.js",
     "imports": [
       "resources/js/app.js",
-      "_PasienLayout-7750b425.js",
-      "_PhUser.vue-42b57831.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhEye.vue-3a0a261d.js",
-      "_PhSignOut.vue-98dc8f64.js"
+      "_PasienLayout-78074eec.js",
+      "_PhUser.vue-c4a2ae89.js",
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhEye.vue-6bd04f37.js",
+      "_PhSignOut.vue-d88a32e7.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Reservations/MyReservations.vue"
   },
   "resources/js/Pages/Reservations/Show.vue": {
-    "file": "assets/Show-57a892e9.js",
+    "file": "assets/Show-72ba3a1f.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js",
+      "_AppLayout-dae4340c.js",
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js",
       "__plugin-vue_export-helper-c27b6911.js"
     ],
     "isDynamicEntry": true,
@@ -531,133 +521,132 @@
     "css": [
       "assets/ShowPatient-84c2f07d.css"
     ],
-    "file": "assets/ShowPatient-02274271.js",
+    "file": "assets/ShowPatient-f541b0ab.js",
     "imports": [
       "resources/js/app.js",
-      "_PasienLayout-7750b425.js",
-      "_PhArrowLeft.vue-872f8b85.js",
-      "_PhUser.vue-42b57831.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhNotePencil.vue-2f5d6dac.js",
-      "_PhSignOut.vue-98dc8f64.js"
+      "_PasienLayout-78074eec.js",
+      "_PhArrowLeft.vue-7cd0cf55.js",
+      "_PhUser.vue-c4a2ae89.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhNotePencil.vue-90d1b402.js",
+      "_PhSignOut.vue-d88a32e7.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Reservations/ShowPatient.vue"
   },
   "resources/js/Pages/Services/Catalog.vue": {
-    "file": "assets/Catalog-56909c7a.js",
+    "file": "assets/Catalog-023dabc6.js",
     "imports": [
       "resources/js/app.js",
-      "_PasienLayout-7750b425.js",
-      "_PhX.vue-bddc74a7.js",
-      "_PhSignOut.vue-98dc8f64.js"
+      "_PasienLayout-78074eec.js",
+      "_PhX.vue-9d5f5acb.js",
+      "_PhSignOut.vue-d88a32e7.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Services/Catalog.vue"
   },
   "resources/js/Pages/Services/Create.vue": {
-    "file": "assets/Create-2c8ce251.js",
+    "file": "assets/Create-80b808eb.js",
     "imports": [
       "resources/js/app.js",
-      "_SimpleLayout-91b6f32c.js",
-      "_PhArrowLeft.vue-872f8b85.js",
-      "_PhSignOut.vue-98dc8f64.js",
-      "_PhWarning.vue-0291b903.js"
+      "_SimpleLayout-9e4aead0.js",
+      "_PhArrowLeft.vue-7cd0cf55.js",
+      "_PhSignOut.vue-d88a32e7.js",
+      "_PhWarning.vue-c808f73c.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Services/Create.vue"
   },
   "resources/js/Pages/Services/Edit.vue": {
-    "file": "assets/Edit-f43d3fd1.js",
+    "file": "assets/Edit-77fbe2c4.js",
     "imports": [
       "resources/js/app.js",
-      "_SimpleLayout-91b6f32c.js",
-      "_PhArrowLeft.vue-872f8b85.js",
-      "_PhSignOut.vue-98dc8f64.js",
-      "_PhWarning.vue-0291b903.js"
+      "_SimpleLayout-9e4aead0.js",
+      "_PhArrowLeft.vue-7cd0cf55.js",
+      "_PhSignOut.vue-d88a32e7.js",
+      "_PhWarning.vue-c808f73c.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Services/Edit.vue"
   },
   "resources/js/Pages/Services/Index.vue": {
-    "file": "assets/Index-4634fe75.js",
+    "file": "assets/Index-f838f6c9.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
-      "_ResetFilterButton-97faf3b6.js",
-      "_lodash-e23d088e.js",
-      "_PhPlus.vue-ac80d116.js",
-      "_PhEye.vue-3a0a261d.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhNotePencil.vue-2f5d6dac.js",
-      "_PhTrashSimple.vue-94343d88.js",
-      "_PhX.vue-bddc74a7.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhSignOut.vue-98dc8f64.js",
+      "_AppLayout-dae4340c.js",
+      "_ResetFilterButton-d1a218ce.js",
+      "_lodash-72a96c4a.js",
+      "_PhTrashSimple.vue-fe8683e8.js",
+      "_PhEye.vue-6bd04f37.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhNotePencil.vue-90d1b402.js",
+      "_PhX.vue-9d5f5acb.js",
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhSignOut.vue-d88a32e7.js",
       "__plugin-vue_export-helper-c27b6911.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Services/Index.vue"
   },
   "resources/js/Pages/Services/Show.vue": {
-    "file": "assets/Show-5abc764e.js",
+    "file": "assets/Show-a8e4564b.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
-      "_PasienLayout-7750b425.js",
-      "_PhArrowLeft.vue-872f8b85.js",
-      "_PhNotePencil.vue-2f5d6dac.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js",
+      "_AppLayout-dae4340c.js",
+      "_PasienLayout-78074eec.js",
+      "_PhArrowLeft.vue-7cd0cf55.js",
+      "_PhNotePencil.vue-90d1b402.js",
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js",
       "__plugin-vue_export-helper-c27b6911.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Services/Show.vue"
   },
   "resources/js/Pages/Settings/Index.vue": {
-    "file": "assets/Index-cb5b4360.js",
+    "file": "assets/Index-584c082a.js",
     "imports": [
       "resources/js/app.js",
-      "_PasienLayout-7750b425.js",
-      "_PhSignOut.vue-98dc8f64.js"
+      "_PasienLayout-78074eec.js",
+      "_PhSignOut.vue-d88a32e7.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Settings/Index.vue"
   },
   "resources/js/Pages/Transactions/Create.vue": {
-    "file": "assets/Create-3d71bd23.js",
+    "file": "assets/Create-edfa4aa0.js",
     "imports": [
       "resources/js/app.js",
-      "_SimpleLayout-91b6f32c.js",
+      "_SimpleLayout-9e4aead0.js",
       "__plugin-vue_export-helper-c27b6911.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Transactions/Create.vue"
   },
   "resources/js/Pages/Transactions/Edit.vue": {
-    "file": "assets/Edit-d0453820.js",
+    "file": "assets/Edit-6213cf17.js",
     "imports": [
       "resources/js/app.js",
-      "_SimpleLayout-91b6f32c.js",
+      "_SimpleLayout-9e4aead0.js",
       "__plugin-vue_export-helper-c27b6911.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Transactions/Edit.vue"
   },
   "resources/js/Pages/Transactions/Index.vue": {
-    "file": "assets/Index-49fdbf2d.js",
+    "file": "assets/Index-190af45a.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
+      "_AppLayout-dae4340c.js",
       "__plugin-vue_export-helper-c27b6911.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js"
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Transactions/Index.vue"
@@ -670,80 +659,80 @@
     "css": [
       "assets/Show-151328c7.css"
     ],
-    "file": "assets/Show-1b7ad683.js",
+    "file": "assets/Show-65d5d08f.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
+      "_AppLayout-dae4340c.js",
       "__plugin-vue_export-helper-c27b6911.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js"
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Transactions/Show.vue"
   },
   "resources/js/Pages/Users/Create.vue": {
-    "file": "assets/Create-d00ab34e.js",
+    "file": "assets/Create-8208274d.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
+      "_AppLayout-dae4340c.js",
       "__plugin-vue_export-helper-c27b6911.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js"
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Users/Create.vue"
   },
   "resources/js/Pages/Users/Edit.vue": {
-    "file": "assets/Edit-fe453fc2.js",
+    "file": "assets/Edit-70a8651c.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
+      "_AppLayout-dae4340c.js",
       "__plugin-vue_export-helper-c27b6911.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js"
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Users/Edit.vue"
   },
   "resources/js/Pages/Users/Index.vue": {
-    "file": "assets/Index-6d5bf22f.js",
+    "file": "assets/Index-86e5fcba.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
+      "_AppLayout-dae4340c.js",
       "__plugin-vue_export-helper-c27b6911.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js"
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Users/Index.vue"
   },
   "resources/js/Pages/Users/Show.vue": {
-    "file": "assets/Show-5a9fc809.js",
+    "file": "assets/Show-817c9cef.js",
     "imports": [
       "resources/js/app.js",
-      "_AppLayout-422bcc0a.js",
+      "_AppLayout-dae4340c.js",
       "__plugin-vue_export-helper-c27b6911.js",
-      "_PhCurrencyCircleDollar.vue-370c4c60.js",
-      "_PhClock.vue-0bcaea51.js",
-      "_PhFlask.vue-b6585dea.js",
-      "_PhSignOut.vue-98dc8f64.js"
+      "_PhCurrencyCircleDollar.vue-f80bc588.js",
+      "_PhClock.vue-13c998a7.js",
+      "_PhFlask.vue-c1cade1f.js",
+      "_PhSignOut.vue-d88a32e7.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Users/Show.vue"
   },
   "resources/js/Pages/Welcome.vue": {
-    "file": "assets/Welcome-0ab2cfdf.js",
+    "file": "assets/Welcome-d841d248.js",
     "imports": [
       "resources/js/app.js",
-      "_PhArrowRight.vue-f503e45d.js"
+      "_PhArrowRight.vue-50db43e9.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Welcome.vue"
@@ -803,7 +792,7 @@
       "resources/js/Pages/Users/Show.vue",
       "resources/js/Pages/Welcome.vue"
     ],
-    "file": "assets/app-807f60dc.js",
+    "file": "assets/app-9ee2d9c3.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }
